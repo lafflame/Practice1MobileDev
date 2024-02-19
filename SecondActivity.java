@@ -13,12 +13,10 @@ public class SecondActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
 
-        // Получаем данные из намерения
         Intent intent = getIntent();
         String name = intent.getStringExtra("NAME");
         int age = intent.getIntExtra("AGE", 0);
 
-        // Отображаем данные
         TextView textViewMessage = findViewById(R.id.textViewMessage);
         textViewMessage.setText("Hello, " + name + "! You are " + age + " years old.");
     }
