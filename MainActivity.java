@@ -29,7 +29,6 @@ public class MainActivity extends AppCompatActivity {
                 String name = editTextName.getText().toString();
                 int age = Integer.parseInt(editTextAge.getText().toString());
 
-                // Создаем намерение для запуска второй активности
                 Intent intent = new Intent(MainActivity.this, SecondActivity.class);
                 intent.putExtra("NAME", name);
                 intent.putExtra("AGE", age);
